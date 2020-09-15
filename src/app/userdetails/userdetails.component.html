@@ -1,0 +1,21 @@
+
+<!-- <div *ngIf = "userdata"></div>
+<p >{{userdata.firstname}}</p>
+<p >{{userdata.lastname}}</p>
+<p >{{userdata.email}}</p>
+<p >{{userdata.phone}}</p>
+<p >{{userdata.imagename}}</p>
+<img src="{{userdata.image}}"> -->
+
+
+<div *ngIf = "userdata" class="card" style="width:400px">
+    <img class="card-img-top" src="{{userdata.image}}" alt="Card image" >
+    <div class="card-body">
+      <h4 class="card-title">{{userdata.firstname}} {{userdata.lastname}}</h4>
+      <p >Email:-  {{userdata.email}}</p>
+      <p >Phone Number:- {{userdata.phone}}</p>
+      <p >Image Name:- {{userdata.imagename}}</p>
+
+    </div>
+  </div>
+
